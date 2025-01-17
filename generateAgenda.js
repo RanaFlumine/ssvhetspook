@@ -1,10 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
-// Function to parse date in DD-MM-YYYY format and convert it to a Date object
+// Function to parse date in YYMMDD format and convert it to a Date object
 function parseDate(dateString) {
-    const [day, month, year] = dateString.split('-').map(num => parseInt(num, 10));
-    return new Date(year, month - 1, day); // Month is 0-indexed in JavaScript Date
+    const day = parseInt(dateString.slice(4, 6), 10);
+    const month = parseInt(dateString.slice(2, 4), 10) - 1; // Month is 0-indexed
+    const year = 2000 + parseInt(dateString.slice(0, 2), 10); // Assuming the year is 20YY
+    return new Date(year, month, day); // Return a Date object
 }
 
 // Function to format Date object as DD-MM-YYYY
@@ -28,12 +30,14 @@ const events = eventFiles.map(file => {
     const filePath = path.join(eventsDir, file);
     const content = fs.readFileSync(filePath, 'utf-8');
 
-    const [date, name] = file.split('Event');
+    const date = file.slice(0, 6);  // First 6 characters are the date (YYMMDD)
+    const name = file.slice(6).replace(/_/g, ' ').trim();  // Everything after the date is the name of the event, replacing underscores with spaces
+    
     const description = content.trim();  // Assuming the text file contains the description
 
     return {
-        date: date.trim(),
-        name: name.trim(),
+        date: date,
+        name: name,
         description: description,
     };
 });
@@ -75,11 +79,9 @@ const agendaHtml = `
         <div id="events-container">
             ${upcomingEvents.map(event => `
             <div class="event">
-                <div class="event">
                 <div class="event-title">${event.name}</div>
-                <div class="event-date">${event.date}</div>
+                <div class="event-date">${formatDate(parseDate(event.date))}</div>
                 <div class="event-description">${event.description}</div>
-            </div>
             </div>
             `).join('')}
         </div>
