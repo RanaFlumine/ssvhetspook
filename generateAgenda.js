@@ -31,7 +31,7 @@ const events = eventFiles.map(file => {
     const content = fs.readFileSync(filePath, 'utf-8');
 
     const date = file.slice(0, 6);  // First 6 characters are the date (YYMMDD)
-    const name = file.slice(6).replace(/_/g, ' ').trim();  // Everything after the date is the name of the event, replacing underscores with spaces
+    const name = file.slice(6, -4).replace(/_/g, ' ').trim();  // Everything after the date is the name of the event, replacing underscores with spaces
     
     const description = content.trim();  // Assuming the text file contains the description
 
