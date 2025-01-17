@@ -76,3 +76,28 @@ footer {
 .footer-div img {
     align-self: center;
 }
+
+/*
+Events in agenda page
+*/
+
+.event {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid var(--spook_white);
+    border-radius: 5px;
+}
+
+.event-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.event-date {
+    color: var(--spook_white);
+    margin-bottom: 10px;
+}
+
+.event-description {
+    white-space: pre-wrap; /* Preserve line breaks in the description */
+}
