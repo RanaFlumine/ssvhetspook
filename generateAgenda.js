@@ -35,6 +35,8 @@ const events = eventFiles.map(file => {
     
     const description = content.trim();  // Assuming the text file contains the description
 
+    console.log(`Parsing file: ${file}, Date: ${date}, Name: ${name}`);
+
     return {
         date: date,
         name: name,
@@ -42,11 +44,17 @@ const events = eventFiles.map(file => {
     };
 });
 
+console.log("Parsed events:", events);
+
 // Filter events to exclude those that are before the current date
 const upcomingEvents = events.filter(event => {
     const eventDate = parseDate(event.date);
-    return eventDate >= today;  // Only include events with a date greater than or equal to today
+    const isUpcoming = eventDate >= today;
+    console.log(`Event: ${event.name}, Date: ${event.date}, IsUpcoming: ${isUpcoming}`);
+    return isUpcoming;
 });
+
+console.log("Upcoming events:", upcomingEvents);
 
 // Sort the filtered events by date (most recent first)
 upcomingEvents.sort((a, b) => parseDate(b.date) - parseDate(a.date));
@@ -91,6 +99,8 @@ const agendaHtml = `
 </body>
 </html>
 `;
+
+console.log("Generated HTML:", agendaHtml);
 
 // Write the generated HTML to the agenda folder
 const agendaDir = path.join(__dirname, 'agenda');
