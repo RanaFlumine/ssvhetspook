@@ -1,6 +1,9 @@
 name: Build Agenda Page
 
 on:
+  # Runs the workflow every day at midnight UTC
+  schedule:
+    - cron: '0 0 * * *'  # This cron expression triggers the action every day at midnight UTC
   push:
     branches:
       - main  # Trigger on push to the main branch
