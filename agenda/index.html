@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,38 +21,22 @@
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nisi fames ac vel nisl tellus dapibus id nisi lorem. Dolor sociosqu euismod nunc, urna eleifend leo amet. Commodo mattis convallis rutrum ridiculus tristique. Ornare tristique sit varius pellentesque; nibh amet porta? Lorem netus placerat non scelerisque curae penatibus. Fames elementum diam pellentesque fringilla id. Mauris vitae mus ut porta tempus arcu elit in.
         </p>
         <br>
-        <div id="events-container"></div>
-
-        <script>
-            async function fetchEvents() {
-                try {
-                    const response = await fetch('/events');
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! Status: ${response.status}`);
-                    }
     
-                    const events = await response.json();
-                    const container = document.getElementById('events-container');
-    
-                    events.forEach(event => {
-                        const eventDiv = document.createElement('div');
-                        eventDiv.className = 'event';
-    
-                        eventDiv.innerHTML = `
-                            <div class="event-title">${event.name}</div>
-                            <div class="event-date">${event.date}</div>
-                            <div class="event-description">${event.description}</div>
-                        `;
-    
-                        container.appendChild(eventDiv);
-                    });
-                } catch (error) {
-                    console.error('Error fetching events:', error);
-                }
-            }
-    
-            fetchEvents();
-        </script>
+        <div id="events-container">
+            
+            <div class="event">
+                <div class="event-title">Lost Highway.txt</div>
+                <div class="event-date">29-01-2025</div>
+                <div class="event-description">We gaan de film Lost Highway bekijken en Ivar geeft een lezing over de film. Inloop vanaf 19:15, begint om 19:30.</div>
+            </div>
+            
+            <div class="event">
+                <div class="event-title">Open Borrel Franse Revolutie.txt</div>
+                <div class="event-date">20-01-2025</div>
+                <div class="event-description">Open borrel in Samson met als thema de Franse Revolutie! Begint om 20:30.</div>
+            </div>
+            
+        </div>
     </div>
 
     <footer-component></footer-component>
