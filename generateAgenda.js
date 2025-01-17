@@ -20,7 +20,7 @@ const today = new Date();
 today.setHours(0, 0, 0, 0);  // Set time to 00:00:00
 
 // Read the event files from the events folder
-const eventsDir = path.join(__dirname, 'events');
+const eventsDir = path.join(__dirname, 'agenda/events');
 const eventFiles = fs.readdirSync(eventsDir).filter(file => file.endsWith('.txt'));
 
 // Read each event file and parse the information
