@@ -30,7 +30,7 @@ jobs:
 
     - name: Generate HTML for Agenda
       run: |
-        node generateAgenda.js  # Run a script to generate the agenda page
+        node /generateAgenda.js  # Run a script to generate the agenda page
 
     - name: Commit and push changes
       run: |
