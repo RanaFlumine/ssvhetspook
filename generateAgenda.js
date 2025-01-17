@@ -86,6 +86,7 @@ const agendaHtml = `
     
         <div id="events-container">
             ${upcomingEvents.map(event => `
+            <br>
             <div class="event">
                 <div class="event-title">${event.name}</div>
                 <div class="event-date">${formatDate(parseDate(event.date))}</div>
