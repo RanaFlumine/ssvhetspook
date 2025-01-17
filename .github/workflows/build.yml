@@ -39,3 +39,4 @@ jobs:
         git add agenda/index.html || true  # Add the agenda file, if present
         git commit -m "Update agenda page [skip ci]" || echo "No changes to commit"
         git push origin HEAD:${{ github.ref_name }} || echo "Nothing to push"
+        cat agenda/index.html || echo "Agenda file not found"
