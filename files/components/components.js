@@ -13,6 +13,7 @@ class Header extends HTMLElement {
         <a href="/lidworden/" class="header-button">Lid worden</a>
       </div>
     </header>
+    <hr>
     `;
   }
 }
@@ -26,34 +27,39 @@ class Footer extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
+    <hr>
     <footer>
       <div class="footer-div">
-        <img style="width: 125px; height: 125px;" src="/files/img/spookjes/Spook3keer.png">
+        <img style="width: 135px; height: 135px;" src="/files/img/spookjes/Spook3keer.png">
         
         <p>
           Contact:
           <br>
           <a target="_blank" href="https://instagram.com/ssv_het_spook">Instagram</a>
           <br>
+          <a target="_blank" href="">Wordt lid!</a>
         </p>
 
         <p>
-          Onze vrienden:
+          Socialistische Cultuur:
           <br>
-          <a target="_blank" href="https://annieromein.nl">S.S.V.G. Annie Romein</a>
+          <a target="_blank" href="https://annieromein.nl"><span>S.S.V.G. Annie Romein</span></a>
           <br>
           <a target="_blank" href="https://janromein.nl">S.S.V.G. Jan Romein</a>
           <br>
           <a target="_blank" href="https://instagram.com/sikkelenharp">S.A.B. Sikkel en Harp</a>
           <br>
-          <a target="_blank" href="https://derodelap.nl">De Rode Lap</a>
-        </p>
-
-        <p>
-          <br>
           <a target="_blank" href="https://instagram.com/hetrodewieltje_nijmegen">Het Rode Wieltje</a>
         </p>
 
+        <p style="margin: 0px;">
+          Onze vrienden:
+          <br>
+          <a target="_blank" href="https://derodelap.nl">De Rode Lap</a>
+          <br>
+          <a target="_blank" href="https://derodelap.nl">ROOD, Socialistische Jongeren</a>
+        </p>
+          
       </div>
     </footer>
     `;

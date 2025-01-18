@@ -12,6 +12,7 @@ body {
 
 hr {
     color: var(--spook_white);
+    width: 80%;
 }
 
 header {
@@ -25,12 +26,13 @@ footer {
 .navigation {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .header-img {
-    height: 125px;
-    width: 375px;
+    width: 300px;
     margin-right: 25px;
+    margin: 0px;
 }
 
 .header-button {
@@ -60,17 +62,34 @@ footer {
     width: 40%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
 .footer-div {
     display: flex; 
-    justify-content: center; 
-    align-items: flex-start;
-    gap: 100px;
+    width: fit-content;
+    justify-self: center;
+    align-items: top;
     font-size: 20px;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.footer-div > * {
+    margin: 0px;
+    margin-right: 50px;
 }
 
 .footer-div a {
     text-decoration: none;
     color: var(--spook_white);
+}
+
+.footer-div a:hover {
+    text-decoration: solid;
+    color: var(--spook_red);
 }
 
 .footer-div img {
