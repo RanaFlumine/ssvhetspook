@@ -57,7 +57,7 @@ class Footer extends HTMLElement {
           <br>
           <a target="_blank" href="https://derodelap.nl"><span>De Rode Lap</span></a>
           <br>
-          <a target="_blank" href="https://derodelap.nl"><span>ROOD, Socialistische Jongeren</span></a>
+          <a target="_blank" href="https://roodjongeren.nl"><span>ROOD, Socialistische Jongeren</span></a>
         </p>
           
       </div>
