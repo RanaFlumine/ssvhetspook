@@ -87,8 +87,8 @@ footer {
     color: var(--spook_white);
 }
 
-.footer-div a:hover {
-    text-decoration: solid;
+.footer-div span:hover {
+    background-color: var(--spook_white);
     color: var(--spook_red);
 }
 

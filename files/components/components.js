@@ -35,9 +35,9 @@ class Footer extends HTMLElement {
         <p>
           Contact:
           <br>
-          <a target="_blank" href="https://instagram.com/ssv_het_spook">Instagram</a>
+          <a target="_blank" href="https://instagram.com/ssv_het_spook"><span>Instagram</span></a>
           <br>
-          <a target="_blank" href="">Wordt lid!</a>
+          <a href="/lidworden/"><span>Wordt lid!</span></a>
         </p>
 
         <p>
@@ -45,19 +45,19 @@ class Footer extends HTMLElement {
           <br>
           <a target="_blank" href="https://annieromein.nl"><span>S.S.V.G. Annie Romein</span></a>
           <br>
-          <a target="_blank" href="https://janromein.nl">S.S.V.G. Jan Romein</a>
+          <a target="_blank" href="https://janromein.nl"><span>S.S.V.G. Jan Romein</span></a>
           <br>
-          <a target="_blank" href="https://instagram.com/sikkelenharp">S.A.B. Sikkel en Harp</a>
+          <a target="_blank" href="https://instagram.com/sikkelenharp"><span>S.A.B. Sikkel en Harp</span></a>
           <br>
-          <a target="_blank" href="https://instagram.com/hetrodewieltje_nijmegen">Het Rode Wieltje</a>
+          <a target="_blank" href="https://instagram.com/hetrodewieltje_nijmegen"><span>Het Rode Wieltje</span></a>
         </p>
 
         <p style="margin: 0px;">
           Onze vrienden:
           <br>
-          <a target="_blank" href="https://derodelap.nl">De Rode Lap</a>
+          <a target="_blank" href="https://derodelap.nl"><span>De Rode Lap</span></a>
           <br>
-          <a target="_blank" href="https://derodelap.nl">ROOD, Socialistische Jongeren</a>
+          <a target="_blank" href="https://derodelap.nl"><span>ROOD, Socialistische Jongeren</span></a>
         </p>
           
       </div>
