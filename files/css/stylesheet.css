@@ -3,6 +3,18 @@
 
 html {
     font-family: "PT serif", serif;
+    cursor: url('/files/img/spook-32x32.png') 7 3, auto;
+}
+
+
+a {
+    color: var(--spook_white);
+}
+
+a:hover {
+    cursor: url('/files/img/spook-32x32.png') 7 3, auto;
+    background-color: var(--spook_white);
+    color: var(--spook_red);
 }
 
 body {
@@ -59,7 +71,13 @@ footer {
     margin: auto;
     text-align: justify;
     font-size: 17px;
-    width: 40%;
+    min-width: 40%;
+    max-width: 320px;
+}
+
+.content img {
+    width: 100%; /* Make the image fill the width of the container */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 footer {
@@ -80,16 +98,6 @@ footer {
 .footer-div > * {
     margin: 0px;
     margin-right: 50px;
-}
-
-.footer-div a {
-    text-decoration: none;
-    color: var(--spook_white);
-}
-
-.footer-div span:hover {
-    background-color: var(--spook_white);
-    color: var(--spook_red);
 }
 
 .footer-div img {
