@@ -66,7 +66,8 @@ const agendaHtml = `
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SSV Het Spook</title>
+    <title>Agenda - SSV Het Spook</title>
+    <meta name="description" content="Dit is de agenda van SSV Het Spook. Hier zie je alle aankomende evenementen en wanneer deze zijn.">
     <link rel="stylesheet" href="/files/css/stylesheet.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/files/img/spook-32x32.png">
     <script src="/files/components/components.js" type="text/javascript" defer></script>
