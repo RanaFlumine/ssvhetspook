@@ -11,12 +11,6 @@ a {
     color: var(--spook_white);
 }
 
-a:hover {
-    cursor: url('/files/img/spook-32x32.png') 7 3, auto;
-    background-color: var(--spook_white);
-    color: var(--spook_red);
-}
-
 body {
     background-color: var(--spook_red);
     color: var(--spook_white);
@@ -102,6 +96,12 @@ footer {
 
 .footer-div img {
     align-self: center;
+}
+
+.footer-div a:hover {
+    cursor: url('/files/img/spook-32x32.png') 7 3, auto;
+    background-color: var(--spook_white);
+    color: var(--spook_red);
 }
 
 /*
