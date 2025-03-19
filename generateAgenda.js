@@ -69,6 +69,7 @@ const agendaHtml = `
     <title>Agenda - SSV Het Spook</title>
     <meta name="description" content="Dit is de agenda van SSV Het Spook. Hier zie je alle aankomende evenementen en wanneer deze zijn.">
     <meta name="og:description" content="Agenda van SSV Het Spook, de enige Socialistisch Studentenvereniging van Nijmegen!">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="/files/css/stylesheet.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/files/img/spook-32x32.png">
     <script src="/files/components/components.js" type="text/javascript" defer></script>
