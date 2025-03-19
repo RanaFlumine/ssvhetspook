@@ -58,7 +58,7 @@ footer {
 .header-button:hover {
     background-color: var(--spook_white);
     color: var(--spook_red);
-
+    cursor: url('/files/img/spook-32x32.png') 7 3, auto;
 }
 
 .content {
