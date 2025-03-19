@@ -41,6 +41,10 @@ footer {
     margin: 0px;
 }
 
+.header-img:hover {
+    cursor: url('/files/img/spook-32x32.png') 7 3, auto;
+}
+
 .header-button {
     text-decoration: none;
     color: var(--spook_white);
