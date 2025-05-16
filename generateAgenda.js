@@ -85,6 +85,9 @@ const agendaHtml = `
         <p>
             Hallo griezel! Hier zie je de agenda voor de komende tijd. De locatie wordt doorgestuurd in de groepsapp van Het Spook. Als je nog geen lid bent en je wilt een keer komen kijken, stuur dan op instagram een DM naar ons en we nodigen je vrijblijvend uit!
         </p>
+        <p>
+            Hello ghoul! Here you can see the agenda for the coming time. The location will be sent in the whatsapp group chat of Het Spook. If you are not a member yet and want to come take a look, send us a DM on instagram and we will invite you without obligation!
+        </p>
         <br>
     
         <div id="events-container">
