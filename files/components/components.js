@@ -8,9 +8,9 @@ class Header extends HTMLElement {
     <header>
       <div class="navigation">
         <a href="/"><img class="header-img" src="/files/img/spooklogo.png"></a>
-        <a href="/" class="header-button">Voorpagina</a>
+        <a href="/" class="header-button">Home</a>
         <a href="/agenda/" class="header-button">Agenda</a>
-        <a href="/lidworden/" class="header-button">Lid worden</a>
+        <a href="/lidworden/" class="header-button">Lid worden<br>Become a member</a>
       </div>
     </header>
     <hr>
