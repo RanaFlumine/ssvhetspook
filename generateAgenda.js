@@ -57,7 +57,7 @@ const upcomingEvents = events.filter(event => {
 console.log("Upcoming events:", upcomingEvents);
 
 // Sort the filtered events by date (most recent first)
-upcomingEvents.sort((a, b) => parseDate(b.date) - parseDate(a.date));
+upcomingEvents.sort((a, b) => parseDate(a.date) - parseDate(b.date));
 
 // Generate the HTML for the agenda page
 const agendaHtml = `
