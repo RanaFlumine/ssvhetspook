@@ -17,6 +17,10 @@ a:hover {
     color: var(--spook_red);
 }
 
+.header-img-a:hover {
+    background-color: var(--spook_red);
+}
+
 body {
     background-color: var(--spook_red);
     color: var(--spook_white);
